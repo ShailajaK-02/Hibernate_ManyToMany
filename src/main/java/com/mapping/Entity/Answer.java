@@ -20,13 +20,37 @@ import jakarta.persistence.ManyToMany;
 		@ManyToMany(mappedBy = "answerList")
 		private List<Question> questionList;
 		
-		public Answer() {
-			
+//		public Answer() {
+//			
+//		}
+//		
+//		public Answer(String answer) {
+//			this.answer=answer;
+//	    }
+
+		public int getId() {
+			return id;
 		}
-		
-		public Answer(String answer) {
-			this.answer=answer;
-	    }
+
+		public List<Question> getQuestionList() {
+			return questionList;
+		}
+
+		public void setQuestionList(List<Question> questionList) {
+			this.questionList = questionList;
+		}
+
+		public void setId(int id) {
+			this.id = id;
+		}
+
+		public String getAnswer() {
+			return answer;
+		}
+
+		public void setAnswer(String answer) {
+			this.answer = answer;
+		}
 
 		@Override
 		public String toString() {

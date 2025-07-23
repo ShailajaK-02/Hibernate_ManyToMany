@@ -15,18 +15,24 @@ public class App
 {
     public static void main( String[] args )
     {
-    	//Create / Add details 
     	
         SessionFactory factory = HibernateUtility.getSessionFactory();
         Session session = factory.openSession();
         Transaction transaction = session.beginTransaction();
         
-        Question q1 = new Question("What is your qualification?");
-        Question q2 = new Question("What is your Highest Qualification?");
+        Question q1 = new Question();
+        q1.setQuestion("What is your Qualification ?");
+        Question q2 = new Question();
+        q2.setQuestion("What is your Highest Qualification?");
         
-        Answer a1 = new Answer("10th ");
-        Answer a2 = new Answer("12th");
-        Answer a3 = new Answer("BE");
+        Answer a1 = new Answer();
+        a1.setAnswer("10TH");
+        
+        Answer a2 = new Answer();
+        a2.setAnswer("12TH");
+        
+        Answer a3 = new Answer();
+        a3.setAnswer("BE" );
         
         List<Answer> aList = Arrays.asList(a1,a2,a3);
         

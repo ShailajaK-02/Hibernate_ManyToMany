@@ -19,12 +19,12 @@ public class Question {
 	@ManyToMany
 	private List<Answer> answerList;
 	
-	public Question() {
-		
-	}
-	public Question(String question) {
-		this.question=question;
-	}
+//	public Question() {
+//		
+//	}
+//	public Question(String question) {
+//		this.question=question;
+//	}
 
 	public int getId() {
 		return id;

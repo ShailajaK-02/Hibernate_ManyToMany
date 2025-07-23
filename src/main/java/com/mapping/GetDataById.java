@@ -13,9 +13,7 @@ import com.mapping.Utility.HibernateUtility;
 public class GetDataById {
 
 	public static void main(String[] args) {
-		
-		//get data by id 
-		
+				
 		SessionFactory factory = HibernateUtility.getSessionFactory();
         Session session = factory.openSession();
         Transaction transaction = session.beginTransaction();
