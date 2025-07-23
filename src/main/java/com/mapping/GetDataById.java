@@ -11,7 +11,8 @@ import com.mapping.Entity.Question;
 import com.mapping.Utility.HibernateUtility;
 
 public class GetDataById {
-
+	
+	//Get data by ID 
 	public static void main(String[] args) {
 				
 		SessionFactory factory = HibernateUtility.getSessionFactory();
