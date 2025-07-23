@@ -15,7 +15,7 @@ public class App
 {
     public static void main( String[] args )
     {
-    	
+    	//Add data 
         SessionFactory factory = HibernateUtility.getSessionFactory();
         Session session = factory.openSession();
         Transaction transaction = session.beginTransaction();
