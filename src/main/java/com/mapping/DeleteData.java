@@ -10,6 +10,7 @@ import com.mapping.Entity.Question;
 import com.mapping.Utility.HibernateUtility;
 
 public class DeleteData {
+	//Delete data 
 	public static void main(String[] args) {
 		
 		SessionFactory factory = HibernateUtility.getSessionFactory();
