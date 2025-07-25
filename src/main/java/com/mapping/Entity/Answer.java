@@ -8,6 +8,7 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.ManyToMany;
 
+//Many to many -> Bidirectional always
 @Entity
 	public class Answer {
 
