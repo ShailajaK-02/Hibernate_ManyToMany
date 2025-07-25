@@ -16,7 +16,7 @@ public class GetAllData {
         Transaction transaction = session.beginTransaction();
         List<Question> questions  = session.createQuery("select q from Question q ",Question.class).getResultList();
         
-        //stream().forEach(a -> System.out.println(questions.toString()));
+        //questions.stream().forEach(a -> System.out.println(questions.toString()));
         
         questions.forEach(q -> {
             System.out.println("Question ID: " + q.getId());
@@ -28,7 +28,7 @@ public class GetAllData {
             
             System.out.println("---------------------------------------------------------------------------------------------");
         });
-        
+//        
         transaction.commit();
         session.close();
 	}
