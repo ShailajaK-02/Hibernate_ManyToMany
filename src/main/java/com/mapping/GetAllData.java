@@ -8,9 +8,7 @@ import com.mapping.Utility.HibernateUtility;
 
 public class GetAllData {
 	public static void main(String[] args) {
-		
-		//Get all data added
-		
+			//Get all data added
 		SessionFactory factory = HibernateUtility.getSessionFactory();
         Session session = factory.openSession();
         Transaction transaction = session.beginTransaction();
