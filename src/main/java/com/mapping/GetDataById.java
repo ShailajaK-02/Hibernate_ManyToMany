@@ -12,7 +12,7 @@ import com.mapping.Utility.HibernateUtility;
 
 public class GetDataById {
 	
-	//Get data by ID 
+	//Get data by ID added
 	public static void main(String[] args) {
 				
 		SessionFactory factory = HibernateUtility.getSessionFactory();
