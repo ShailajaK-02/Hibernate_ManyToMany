@@ -12,7 +12,7 @@ import com.mapping.Utility.HibernateUtility;
 
 public class UpdateData {
 	
-	//Update the data 
+	//Update the data added 
 	public static void main(String[] args) {
 	
 		//To update the data First fetch it and then set the values
